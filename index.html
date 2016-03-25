@@ -6,7 +6,29 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<fieldset id="form-gra-time" name="formGraTime">
+		<legend>请选择日期粒度：</legend>
+		<label>日<input name="graTime" value="day" type="radio" checked="checked"></label>
+		<label>周<input name="graTime" value="week" type="radio"></label>
+		<label>月<input name="graTime" value="month" type="radio"></label>
+	</fieldset>
 
+	<fieldset>
+		<legend>请选择查看的城市：</legend>
+		<select id="city-select" name="citySelect">
+			<option value="北京" name="citySelectOption" selected="selected">北京</option>
+			<option value="上海" name="citySelectOption">上海</option>
+			<option value="广州" name="citySelectOption">广州</option>
+			<option value="深圳" name="citySelectOption">深圳</option>
+			<option value="成都" name="citySelectOption">成都</option>
+			<option value="西安" name="citySelectOption">西安</option>
+			<option value="福州" name="citySelectOption">福州</option>
+			<option value="厦门" name="citySelectOption">厦门</option>
+			<option value="沈阳" name="citySelectOption">沈阳</option>
+		</select>
+	</fieldset>
+
+	<div id="aqiChartResult"></div>
 
 <script src="js/app.js"></script>
 </body>
